@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to edited #{title}
+
+  <form action="/users/register" method="POST">
+  <input type="text" placeholder="name" name="name">
+  <input type="text" placeholder="quote" name="quote">
+  <button type="submit">Submit</button>
+  </form>
